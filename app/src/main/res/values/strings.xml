@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">Authentic Inspirational Wisdom</string>
+    <string name="title_home">⬜</string>
+    <string name="title_favourites">⚪</string>
+    <string name="title_settings">⚙️</string>
+    <string name="title_btn_refresh">🔄</string>
+    <string name="title_btn_favourite">🔄</string>
+    <string name="text_home">⬜</string>
+    <string name="text_favourites">⚪</string>
+    <string name="text_settings">⚙️</string>
+    <string name="text_btn_refresh">🔄</string>
+    <string name="text_btn_favourite_filled">❤️</string>
+    <string name="text_btn_favourite_unfilled">🤍</string>
+</resources>
