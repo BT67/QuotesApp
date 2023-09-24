@@ -1,6 +1,7 @@
 package com.example.quotesapp
 
 import android.os.Bundle
+import android.text.method.ScrollingMovementMethod
 import android.widget.Button
 import android.widget.TextView
 import androidx.activity.ComponentActivity
@@ -58,10 +59,12 @@ class MainActivity : ComponentActivity() {
         )
 
         val txt_quote = findViewById<TextView>(R.id.text_home)
+        txt_quote.movementMethod = ScrollingMovementMethod();
 
         findViewById<Button>(R.id.btn_refresh)?.setOnClickListener {
             // Code here executes on main thread after user presses button
             txt_quote.text = quotes[(quotes.indices).random()]
         }
+
     }
 }
