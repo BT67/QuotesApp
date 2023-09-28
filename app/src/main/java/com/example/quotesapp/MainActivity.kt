@@ -6,7 +6,6 @@ import android.widget.Button
 import android.widget.TextView
 import androidx.activity.ComponentActivity
 import com.google.android.gms.ads.AdRequest
-import com.google.android.gms.ads.AdSize
 import com.google.android.gms.ads.AdView
 import com.google.android.gms.ads.MobileAds
 
@@ -26,7 +25,6 @@ class MainActivity : ComponentActivity() {
             "The hope of the Emperors's intervention steels warriors' hearts and lends strength to their conviction. They hold out against impossible odds and offer up prayers to the Emperor that he may notice their plight. They fight harder, knowing that if they do so he might intervene.",
             "We must utterly defeat our enemies and erase all trace of their existence, lest they do the same to us.",
             "I stand alongside warriors of honour, and the warrior who acts out of honour cannot fail. His duty is honour itself. Even a warrior's death--if it is honourable--is a reward and can be no failure, for it has come through duty. Seek honour as you act, and you will know no fear. Above all remember this... for a warrior the only crime is cowardice.",
-            "I haven't lost an arm, it's right over there.",
             "Be proud to live - be proud to die.",
             "There is no enemy. The foe on the battlefield is merely the manifestation of that which we must overcome. He is doubt, and fear, and despair. Every battle is fought within. Conquer the battlefield that lies inside you, and the enemy disappears like the illusion he is.",
             "Raise the flag high. Let those degenerates know who comes to deliver the Emperor's judgement.",
@@ -64,18 +62,21 @@ class MainActivity : ComponentActivity() {
 
         val txt_quote = findViewById<TextView>(R.id.text_home)
         txt_quote.movementMethod = ScrollingMovementMethod();
+        txt_quote.getBackground().setAlpha(150)
 
         findViewById<Button>(R.id.btn_refresh)?.setOnClickListener {
             // Code here executes on main thread after user presses button
-            txt_quote.text = quotes[(quotes.indices).random()]
+            txt_quote.text = "\"" + quotes[(quotes.indices).random()] + "\"";
         }
 
         MobileAds.initialize(this) {}
 
-        val adView = findViewById<AdView>(R.id.adView)
+        val adViewTop = findViewById<AdView>(R.id.adViewTop)
+        val adViewBottom = findViewById<AdView>(R.id.adViewBottom)
         val adRequest = AdRequest.Builder().build()
 
-        adView.loadAd(adRequest)
+        adViewTop.loadAd(adRequest)
+        adViewBottom.loadAd(adRequest)
 
     }
 }
