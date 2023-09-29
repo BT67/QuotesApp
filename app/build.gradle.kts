@@ -4,11 +4,11 @@ plugins {
 }
 
 android {
-    namespace = "com.example.quotesapp"
+    namespace = "com.garo.quotesapp"
     compileSdk = 33
 
     defaultConfig {
-        applicationId = "com.example.quotesapp"
+        applicationId = "com.garo.quotesapp"
         minSdk = 24
         targetSdk = 33
         versionCode = 1
@@ -23,6 +23,7 @@ android {
     buildTypes {
         release {
             isMinifyEnabled = false
+            isDebuggable = false
             proguardFiles(getDefaultProguardFile("proguard-android-optimize.txt"), "proguard-rules.pro")
         }
     }
