@@ -31,7 +31,7 @@ class MainActivity : ComponentActivity() {
             "True justice is quite simply the will of the Emperor.",
             "Whatever the Emperor's will is, be sure it will find you out.",
             "There is no such thing as a minor detail. One cannot and should not dismiss any data until one is in a position to evaluate its significance, and that only comes with hindsight. So every detail is important until circumstances render it redundant.",
-            "Be pure of heart and strong of body, untainted by doubt and unsullied by self-aggrandisement.",
+            "Be pure of heart and strong of body, untainted by doubt and unsullied by arrogance.",
             "Have little but contempt for authority that is bestowed rather than earned.",
             "A foe without honour is a foe already beaten.",
             "Praise the sun that brings the dawn of your final day.",
@@ -84,7 +84,15 @@ class MainActivity : ComponentActivity() {
             "There are no miracles. There are only men.",
             "If the road is easy, the destination is worthless.",
             "A single man with faith can triumph over a legion of the faithless. Untold billions of the faithful can never be opposed.",
-            "A war waged by committee is a war already lost."
+            "A war waged by committee is a war already lost.",
+            "If an archer shoots for fun he has all his skill, but if he shoots for a prize his hands tremble and his breath is uneasy. His skill was not lessened, but his vision of the target changed him.",
+            "The rewards of tolerance are treachery and betrayal.",
+            "Use only that which works, and take it from any place you can find it.",
+            "If an injury has to be done to a man it should be so severe that his vengeance need not be feared.",
+            "Never attempt to win by force what can be won by deception.",
+            "He who seeks to deceive will always find someone who will allow himself to be deceived.",
+            "He who wishes to be obeyed must know how to command.",
+            "One who desires constant success must change his conduct with the times."
         )
 
         val txt_quote = findViewById<TextView>(R.id.text_home)
